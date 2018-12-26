@@ -25,7 +25,7 @@ function main() {
     var binBasePath = PATH.join(__dirname, "/bin");
     if (!EXISTS_SYNC(binBasePath)) {
         console.log("Creating directory ", binBasePath);
-        FS.mkdir(binBasePath, 0755, function(){});
+        FS.mkdir(binBasePath, 0755, function () {});
     } else {
         console.log("Directory exists at ", binBasePath);
     }
